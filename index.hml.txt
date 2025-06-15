@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Downloads – My Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide-react@0.292.0/dist/umd/lucide.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="flex min-h-screen bg-slate-900 text-white font-[Inter]">
+
+    <!-- Sidebar Navigation -->
+    <aside class="w-64 flex-shrink-0 p-4 space-y-4 glass-card m-4">
+        <div class="flex items-center space-x-3 px-2">
+            <i data-lucide="folder-open" class="text-sky-400"></i>
+            <h1 class="text-xl font-bold">My Project</h1>
+        </div>
+        <nav class="flex flex-col space-y-2">
+            <a href="#" class="nav-link flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-700">
+                <i data-lucide="home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-link flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-700">
+                <i data-lucide="info"></i>
+                <span>About</span>
+            </a>
+            <a href="#" class="nav-link active flex items-center space-x-3 p-3 rounded-lg bg-slate-800">
+                <i data-lucide="download-cloud"></i>
+                <span>Downloads</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 md:p-10 lg:p-12 overflow-y-auto">
+        <div class="glass-card p-8 bg-slate-800 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 flex items-center">
+                <i data-lucide="package" class="mr-3 text-sky-400"></i>
+                Project Presentation
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Presentation Link -->
+                <a href="https://www.canva.com/design/DAGqM0R4YMQ/ykWQX4d84ZZe9nljV1b05g/edit?utm_content=DAGqM0R4YMQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="block p-6 bg-slate-700 hover:bg-slate-600 rounded-lg transition text-center">
+                    <i data-lucide="slideshow" class="w-12 h-12 mx-auto text-sky-400 mb-4"></i>
+                    <h3 class="font-semibold text-lg">Open Presentation</h3>
+                    <p class="text-sm text-slate-300">View on Canva</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
